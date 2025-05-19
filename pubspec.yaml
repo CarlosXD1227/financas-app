@@ -1,62 +1,35 @@
 name: financas_app
-description: "Aplicativo de gerenciamento de despesas pessoais."
-publish_to: 'none'
+description: Aplicativo de gerenciamento de despesas pessoais
 
+publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.3.1 <4.0.0'
+  sdk: ">=2.17.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.6
-  
-  # Banco de dados
-  sqflite: ^2.3.0
-  path_provider: ^2.1.1
-  
-  # Gerenciamento de estado
-  provider: ^6.1.1
-  
-  # Gráficos
-  fl_chart: ^0.65.0
-  
-  # Formatação de data e moeda
-  intl: ^0.18.1
-  
-  # Notificações locais
-  flutter_local_notifications: ^16.1.0
-  
-  # Backup e sincronização
-  shared_preferences: ^2.2.2
-  
-  # Exportação de relatórios
-  pdf: ^3.10.4
-  printing: ^5.11.1
-  excel: ^2.1.0
-  file_picker: ^6.1.1
-  
-  # Ícones e UI
-  font_awesome_flutter: ^10.6.0
-  google_fonts: ^6.1.0
+  cupertino_icons: ^1.0.2
+  sqflite: ^2.0.2
+  path_provider: ^2.0.9
+  intl: ^0.17.0
+  provider: ^6.0.2
+  fl_chart: ^0.55.0
+  shared_preferences: ^2.0.13
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.0
+  flutter_lints: ^2.0.0
 
 flutter:
   uses-material-design: true
-  
   assets:
     - assets/images/
-    
   fonts:
-    - family: Poppins
+    - family: Roboto
       fonts:
-        - asset: assets/fonts/Poppins-Regular.ttf
-        - asset: assets/fonts/Poppins-Bold.ttf
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
           weight: 700
-        - asset: assets/fonts/Poppins-Light.ttf
-          weight: 300
